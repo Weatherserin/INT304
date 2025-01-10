@@ -3,9 +3,8 @@ import React, { useState } from 'react';
 const EmployeeForm = (props) => {
   const [employee, setEmployee] = useState({
     name: '',
-    position: '',
-    department: '',
     email: '',
+    phone: '',
   });
 
   const handleChange = (e) => {
