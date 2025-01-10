@@ -21,9 +21,8 @@ const EmployeeForm = (props) => {
     props.onSubmit(employee);
     setEmployee({
       name: '',
-      position: '',
-      department: '',
       email: '',
+      phone: '',
     });
   };
 
@@ -39,29 +38,20 @@ const EmployeeForm = (props) => {
         />
       </div>
       <div>
-        <label>Position:</label>
-        <input
-          type="text"
-          name="position"
-          value={employee.position}
-          onChange={handleChange}
-        />
-      </div>
-      <div>
-        <label>Department:</label>
-        <input
-          type="text"
-          name="department"
-          value={employee.department}
-          onChange={handleChange}
-        />
-      </div>
-      <div>
         <label>Email:</label>
         <input
-          type="email"
+          type="text"
           name="email"
           value={employee.email}
+          onChange={handleChange}
+        />
+      </div>
+      <div>
+        <label>Phone:</label>
+        <input
+          type="text"
+          name="phone"
+          value={employee.phone}
           onChange={handleChange}
         />
       </div>
